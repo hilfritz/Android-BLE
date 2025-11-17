@@ -49,13 +49,41 @@ cd Android-BLE
 5. Real-time updates appear via dialog
 
 ## Testing with nRF Connect by Nordic Semiconductors - an external app available in PlayStore
+This application demonstrates real BLE communication, which always occurs between two devices:
+
+### 1. **Device A — BLE Peripheral (Server)**
+This device behaves like an actual BLE device (heart rate monitor, sensor beacon, tracker, etc.).  
+For development and testing, **nRF Connect** is used to create a *simulated BLE device* by defining:
+
+- Custom Service (e.g., 0xAA15)
+- Custom Characteristic (0xAA16)
+- Properties such as **NOTIFY** and **READ**
+- Live notifications sent from the GATT Server
+
+Device A *advertises* itself and waits for a connection.
+
+---
+
+### 2. **Device B — BLE Central (Client)**
+This device runs **the Android BLE Scanner app** from this repository.
+
+It is responsible for:
+
+- Scanning for BLE advertisements
+- Connecting to Device A
+- Discovering services and characteristics
+- Enabling notifications
+- Reading characteristic values
+- Displaying updates in real-time
+
+## How to use nrf Connect
 1. Create Service UUID **0xAA15**
 2. Create Characteristic UUID **0xAA16** with **NOTIFY**
 3. Advertise service from OnePlus
 4. Connect with this app
 5. Send notifications from nRF
 
-## Screenshots
+## Screenshots of the App (Device B running the BLE Scanner App)
 
 | Scan Screen | Device List | Services View |
 |-------------|-------------|---------------|
