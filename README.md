@@ -59,11 +59,11 @@ cd Android-BLE
 
 | Scan Screen | Device List | Services View |
 |-------------|-------------|---------------|
-| <img src="docs/screenshots/scan.png" width="260"/> | <img src="docs/screenshots/devices.png" width="260"/> | <img src="docs/screenshots/services.png" width="260"/> |
+| <img src="docs/screenshots/scan.jpg" width="260"/> | <img src="docs/screenshots/devices.jpg" width="260"/> | <img src="docs/screenshots/services.jpg" width="260"/> |
 
 | Characteristic Read | Notification Received |
 |---------------------|-----------------------|
-| <img src="docs/screenshots/read.png" width="260"/> | <img src="docs/screenshots/notify.png" width="260"/> |
+| <img src="docs/screenshots/read.jpg" width="260"/> | <img src="docs/screenshots/notify.jpg" width="260"/> |
 
 ## BLE Manager Class
 ```java
