@@ -56,10 +56,14 @@ cd Android-BLE
 5. Send notifications from nRF
 
 ## Screenshots
-Place your screenshots in:
-```
-/screenshots
-```
+
+| Scan Screen | Device List | Services View |
+|-------------|-------------|---------------|
+| <img src="docs/screenshots/scan.png" width="260"/> | <img src="docs/screenshots/devices.png" width="260"/> | <img src="docs/screenshots/services.png" width="260"/> |
+
+| Characteristic Read | Notification Received |
+|---------------------|-----------------------|
+| <img src="docs/screenshots/read.png" width="260"/> | <img src="docs/screenshots/notify.png" width="260"/> |
 
 ## BLE Manager Class
 ```java
